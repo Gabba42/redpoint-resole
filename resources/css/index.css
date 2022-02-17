@@ -68,7 +68,7 @@ body {
 }
 
 .video-header {
-    
+    display:flex;
 }
 
 .promo-video {
