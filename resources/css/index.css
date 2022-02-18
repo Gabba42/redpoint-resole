@@ -1,9 +1,13 @@
 :root {
+    /* font variables */ 
+    --font-primary: 'Spartan', sans-serif;
+    --font-header: 'Noto Serif Display', serif;
+
     /* color variables */ 
-    --clr-background-dark: #220C10;   
+    --clr-background-dark: black;   
     --clr-background--light: #F4EBD9;
     --clr-lightgray: #4F6367;
-    --clr-red: #E71D36; 
+    --clr-red: #ED0505; 
     --clr-darkblue: #0B3C49; 
 
     /* border radius */ 
@@ -16,13 +20,24 @@
     box-sizing: border-box; 
 }
 
+/* this will remove margins on tags below and make elements flush to window border*/
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0; 
+}
+
+/* ^all the above is defult settings for a good css page*/
+
 body {
     background: var(--clr-lightgray);
 }
 
 .nav-list {
-    background: var(--clr-background--light);
-    box-shadow: 0px 0px 10px var(--clr-background-dark);
+    background: var(--clr-background-dark);
+    box-shadow: 0px 0px 10px var(--clr-background-light);
     margin: 0; 
     padding: 1rem 0; /* top and botton 1rem, left and right 0 */
     border-radius: var(--radius); /* round out corners*/ 
@@ -37,8 +52,9 @@ body {
 }
 
 .nav-item a { /* remove underline and blue color from links */ 
-    text-decoration: none; 
-    color: black; 
+    text-decoration: none;
+    font-family: var(--font-primary);
+    color: white; 
     transition: all 200ms ease-in;
 }
 
@@ -53,7 +69,8 @@ body {
 
 .btn-primary { 
     font-size: 1rem; 
-    background: var(--clr-lightgray);
+    font-family: var(--font-primary);
+    background: white;
     border: none; /* get rid of the border lines that are default */ 
     outline: none; /* get rid of the border lines that are default */ 
     border-radius: var(--radius);
@@ -68,11 +85,21 @@ body {
 }
 
 .video-header {
-    display:flex;
+    display: flex;
 }
 
-.promo-video {
+.video-primary {
     width: 100%; 
     height: auto; 
+    position: relative;
+}
+
+.message-primary p {
+    font-family: var(--font-header); 
+    font-size: 45px; 
+    color: white; 
+    position: absolute;
+    left: 12%; 
+    top: 30%;
 }
 
