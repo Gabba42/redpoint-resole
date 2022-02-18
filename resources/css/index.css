@@ -103,3 +103,19 @@ body {
     top: 30%;
 }
 
+.mission-statement {
+    display: flex; 
+}
+
+.service-area {
+    display: flex; 
+}
+
+.insta-container {
+    display: flex; 
+}
+
+.footer-container {
+    display: flex; 
+}
+
