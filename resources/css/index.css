@@ -5,10 +5,9 @@
 
     /* color variables */ 
     --clr-background-dark: black;   
-    --clr-background--light: #F4EBD9;
+    --clr-background-light: white;
     --clr-lightgray: #4F6367;
     --clr-red: #ED0505; 
-    --clr-darkblue: #0B3C49; 
 
     /* border radius */ 
     --radius: 0.2rem;
@@ -32,7 +31,13 @@ p {
 /* ^all the above is defult settings for a good css page*/
 
 body {
-    background: var(--clr-lightgray);
+    background: var(--clr-background-dark);
+}
+
+.second-container,
+.third-container, 
+footer {
+    background: var(--clr-background-light); 
 }
 
 .nav-list {
@@ -67,7 +72,8 @@ body {
     margin-left: 2rem;
 }
 
-.btn-primary { 
+.btn-header, 
+.btn-footer {
     font-size: 1rem; 
     font-family: var(--font-primary);
     background: white;
@@ -79,13 +85,10 @@ body {
     transition: all 200ms ease-in;
 }
 
-.btn-primary:hover {
+.btn-header:hover,
+.btn-footer:hover{
     background: var(--clr-red);
     color: white;
-}
-
-.video-header {
-    display: flex;
 }
 
 .video-primary {
@@ -96,14 +99,31 @@ body {
 
 .message-primary p {
     font-family: var(--font-header); 
-    font-size: 45px; 
+    font-size: 2.7rem; 
     color: white; 
     position: absolute;
     left: 12%; 
-    top: 30%;
+    top: 30%
 }
 
-.mission-statement {
+.btn-primary {
+    font-size: 1.4rem; 
+    font-family: var(--font-primary);
+    color: white;
+    background: var(--clr-red);
+    border: none; /* get rid of the border lines that are default */ 
+    outline: none; /* get rid of the border lines that are default */ 
+    border-radius: var(--radius);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    position: absolute;
+    left: 12%; 
+    top: 48%
+}
+
+
+.mission {
     display: flex; 
 }
 
@@ -113,6 +133,11 @@ body {
 
 .insta-container {
     display: flex; 
+}
+
+.insta-container * {
+    width: 50%;
+    height: auto;
 }
 
 .footer-container {
