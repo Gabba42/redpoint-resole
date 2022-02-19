@@ -31,13 +31,19 @@ p {
 /* ^all the above is defult settings for a good css page*/
 
 body {
+    background: var(--clr-background-light);
+}
+
+header {
     background: var(--clr-background-dark);
 }
 
 .second-container,
 .third-container, 
+.fourth-container,
 footer {
     background: var(--clr-background-light); 
+    margin-top: 2rem;
 }
 
 .nav-list {
@@ -133,11 +139,39 @@ footer {
 
 .insta-container {
     display: flex; 
+    margin-left: 2.5rem;
 }
 
 .insta-container * {
-    width: 50%;
+    width: 87%;
     height: auto;
+    position: relative;
+}
+
+.text {
+    font: var(--font-primary); 
+    color: var(--clr-background-dark);
+    font-size: 1rem;
+}
+
+#insta-img {
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+#insta-img:hover {
+    opacity: 0.5;
+}
+
+.text-overlay:hover {
+     
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    text-align: center;
 }
 
 .footer-container {
