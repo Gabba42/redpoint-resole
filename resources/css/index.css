@@ -34,10 +34,6 @@ body {
     background: var(--clr-background-light);
 }
 
-header {
-    background: var(--clr-background-dark);
-}
-
 .second-container,
 .third-container, 
 .fourth-container,
@@ -47,14 +43,14 @@ footer {
 }
 
 .nav-list {
-    background: var(--clr-background-dark);
+    background: var(--clr-background-light);
     box-shadow: 0px 0px 10px var(--clr-background-light);
     margin: 0; 
     padding: 1rem 0; /* top and botton 1rem, left and right 0 */
     border-radius: var(--radius); /* round out corners*/ 
     display: flex; 
     justify-content: end;
-    align-items: center; /* elements go to the center if the nav list */ 
+    align-items: center; /* elements go to the center of the nav list */ 
 }
 
 .nav-item {
@@ -65,7 +61,7 @@ footer {
 .nav-item a { /* remove underline and blue color from links */ 
     text-decoration: none;
     font-family: var(--font-primary);
-    color: white; 
+    color: black; 
     transition: all 200ms ease-in;
 }
 
@@ -176,5 +172,6 @@ footer {
 
 .footer-container {
     display: flex; 
+    align-items: flex-end;
 }
 
