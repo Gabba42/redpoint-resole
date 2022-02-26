@@ -173,5 +173,14 @@ footer {
 .footer-container {
     display: flex; 
     align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 3rem; 
+    margin-bottom: 3rem; 
+    margin-left: 2rem;
+    margin-right: 2rem; 
+}
+
+#btn-and-license {
+    align-content: center;
 }
 
