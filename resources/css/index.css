@@ -35,12 +35,13 @@ body {
 }
 
 .second-container,
-.third-container, 
-.fourth-container,
-footer {
+.third-container {
     background: var(--clr-background-light); 
     margin-top: 2rem;
 }
+
+
+/* || Header */
 
 .nav-list {
     background: var(--clr-background-light);
@@ -124,13 +125,22 @@ footer {
     top: 48%
 }
 
+/* || Mission Statement */
 
 .mission {
     display: flex; 
 }
 
+/* || Location & Service Area */ 
+
 .service-area {
     display: flex; 
+}
+
+/* || Instagram Review Bar */
+
+.fourth-container {
+    background-color: black;
 }
 
 .insta-container {
@@ -144,23 +154,9 @@ footer {
     position: relative;
 }
 
-.text {
-    font: var(--font-primary); 
-    color: var(--clr-background-dark);
-    font-size: 1rem;
-}
-
 #insta-img {
     cursor: pointer;
     transition: all 200ms ease-in;
-}
-
-#insta-img:hover {
-    opacity: 0.5;
-}
-
-.text-overlay:hover {
-     
 }
 
 .text-overlay {
@@ -168,15 +164,40 @@ footer {
     top: 50%;
     left: 10%;
     text-align: center;
+    transition: .5 ease; 
+    opacity: 0; 
+}
+
+.text-overlay .text {
+    color: white; 
+}
+
+#insta-img:hover {
+    opacity: 0.5;
+}
+
+.insta-review:hover .text-overlay {
+     opacity: 1; 
+}
+
+/* || Footer with SVG Animation */ 
+
+footer { 
+    background-color: black;
 }
 
 .footer-container {
     display: flex; 
     align-items: flex-end;
     justify-content: space-between;
-    margin-bottom: 3rem; 
-    margin-left: 2rem;
-    margin-right: 2rem; 
+    padding-bottom: 3rem; 
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #E5E5E5; 
+}
+
+#btn-and-license {
+    align-content: center;
 }
 
 svg path {
@@ -190,8 +211,3 @@ svg path {
         stroke-dashoffset: 0;
     } 
 }
-
-#btn-and-license {
-    align-content: center;
-}
-
