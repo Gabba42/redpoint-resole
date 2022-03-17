@@ -179,21 +179,16 @@ footer {
     margin-right: 2rem; 
 }
 
-#pikes-peak-ridge-line {
-    stroke-dasharray: 40;
-}
-
-path {
+svg path {
     stroke-dasharray: 2000;
-    /* stroke-dashoffset: 2000;
-    animation: draw 6s linear forwards;  */
+    stroke-dashoffset: 2000;
+    animation: draw 10s linear forwards; 
 }
 
-/* @keyframes draw {
+@keyframes draw {
     to {
         stroke-dashoffset: 0;
-    } */
-
+    } 
 }
 
 #btn-and-license {
