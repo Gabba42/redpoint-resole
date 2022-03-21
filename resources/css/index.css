@@ -79,7 +79,8 @@ body {
 .btn-footer {
     font-size: 1rem; 
     font-family: var(--font-primary);
-    background: white;
+    color: white; 
+    background: var(--clr-red); 
     border: none; /* get rid of the border lines that are default */ 
     outline: none; /* get rid of the border lines that are default */ 
     border-radius: var(--radius);
@@ -90,8 +91,7 @@ body {
 
 .btn-header:hover,
 .btn-footer:hover{
-    background: var(--clr-red);
-    color: white;
+    /* add any animations on the buttons here */
 }
 
 .video-primary {
@@ -119,7 +119,6 @@ body {
     border-radius: var(--radius);
     padding: 0.5rem 1rem;
     cursor: pointer;
-    transition: all 200ms ease-in;
     position: absolute;
     left: 12%; 
     top: 48%
@@ -133,7 +132,7 @@ body {
 
 /* || Location & Service Area */ 
 
-.service-area {
+.service-location {
     display: flex; 
 }
 
