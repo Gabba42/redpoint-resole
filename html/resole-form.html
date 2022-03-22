@@ -3,6 +3,7 @@
     <head>
         <title>Redpoint Resole</title>
         <link rel="stylesheet" href="/resources/css/index.css">
+        <script type="text/javascript" src="/resources/scripts/form-data.js"></script>
     </head>
 
     <body>
@@ -15,7 +16,55 @@
                 <li class="nav-item"><a href="/html/resole-form.html"><button class="btn-header">Resole My Shoes!</button></a></li>
             </ul>
         </nav>
-        <p>form to resole shoes</p>
+        <form action="" method="post"> 
+            <fieldset>
+                <legend>Contact Details</legend>
+                <label>Name:<input type="text" name="name"/></label><br />
+                <label>Email:<input type="text" name="email"/></label><br />
+                <label>Phone Number:<input type="text" name="phone"/></label><br />
+                <label>Address:</label><br />
+                <label>street:<input type="text" name="street"/></label><br />
+                <label>city:<input type="text" name="city"/></label><br />
+                <label>state:<input type="text" name="state"/></label><br />
+                <label>zipcode:<input type="text" name="zipcode"/></label><br />
+            </fieldset>
+            <fieldset>
+                <legend>Shoe Details</legend>
+                <label>Maker:
+                    <select name="maker" id="maker">
+                        <option value="" selected="selected">Choose Shoe Maker</option>
+                    </select>
+                </label>
+                <br />
+
+                <label>Model:
+                    <select name="model" id="model">
+                        <option value="" selected="selected">Choose Shoe Model</option>
+                    </select>
+                </label>
+                <br />
+
+                <label>Size:
+                    <select name="size" id="size">
+                        <option value="" selected="selected">Choose Shoe Size</option>
+                    </select>
+                </label>
+                <br />
+                <label>Color:<input type="text" name="color"/></label><br />
+            </fieldset>
+            <fieldset>
+                <legend>Service Details</legend>
+                <label>Full resole:<input type="text" name="full-resole"/></label><br />
+                <label>Half resole:<input type="text" name="half-resole"/></label><br />
+                <label>Toe caps:<input type="text" name="toe-caps"/></label><br />
+                <label>Type of rubber preferred:<input type="text" name="rubber-preference"/></label><br />
+            </fieldset>
+            <fieldset>
+                <legend>Shipping Details</legend>
+                <label>Pickup at CityRock:<input type="text" name="pickup"/></label><br />
+                <label>Ship direct:<input type="text" name="ship"/></label><br />
+            </fieldset>
+        </form>
     </body>
 
 </html>
