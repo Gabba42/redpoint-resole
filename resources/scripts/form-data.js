@@ -33,7 +33,7 @@ const shoeObject = {
         "model": ["Black Drone HV", "Black Drone LV", "Drone HV", "Drone LV", "Mad Monkey 2.0", "Pheonix", "RedLine Strap", "Remora HV", "Remora LV", "Remora Tokyo Edition", "Rover", "Shark 2.0", "Other"]
     },
     "Millet": {
-        "model": ["Easy Up", "Siurana EVO"]
+        "model": ["Easy Up", "Siurana EVO", "Other"]
     },
     "Ocun": {
         "model": ["Built", "Crest LU", "Crest QC", "Diamond", "Havoc", "Jett Crack", "Jett LU", "Jett QC", "Nitro", "Oxi S", "Ozone", "Ozone HV", "Pearl", "Rental", "Strike LU", "Strike QC", "Other"]
@@ -57,7 +57,7 @@ const shoeObject = {
         "model": ["Aerial Plus Mastia", "Aerial Plus Mundaka", "Aerial Plus Iati", "Aerial Plus Tarifa", "Aerial Plus Oasi", "Aerial Plus LV", "Balance Pro RA", "Balance Pro Masai", "Balance Pro Inti", "Balance Pro Tatanka", "Balance Pro Aqua+", "Step Up Tanta", "Other"]
     },
     "Unparallel": {
-        "model": ["Engage", "Engage Lace Up", "Engage VCS", "Engage VCS LV", "Flagship", "Flagship Women LV", "Hold Up Slipper", "Hold Up VCS", "Leopard II", "Lyra", "New TRO Lace", "New TRO VCS", "Regulus", "Regulus LV", "Sirius Lace", "Sirius Lace LV", "TN Pro", "TN Pro LV", "Up Grade", "Up Grade Mocc", "Up Mocc", "Up Lace", "Up Lace LV", "Up Rise Pro", "Up Rise VCS", "Up Rise VCS LV", "Up Rise Zero VCS LV", "Vega", "VIM"]
+        "model": ["Engage", "Engage Lace Up", "Engage VCS", "Engage VCS LV", "Flagship", "Flagship Women LV", "Hold Up Slipper", "Hold Up VCS", "Leopard II", "Lyra", "New TRO Lace", "New TRO VCS", "Regulus", "Regulus LV", "Sirius Lace", "Sirius Lace LV", "TN Pro", "TN Pro LV", "Up Grade", "Up Grade Mocc", "Up Mocc", "Up Lace", "Up Lace LV", "Up Rise Pro", "Up Rise VCS", "Up Rise VCS LV", "Up Rise Zero VCS LV", "Vega", "VIM", "Other"]
     },
     "Other": {
         "model": ["Other"]
@@ -82,15 +82,14 @@ window.onload = function() {
         makerSel.options[makerSel.options.length] = new Option(x,x);
     }
 
-
-    let y = shoeObject.Acopa.model[1];
-    
-    console.log(y);
+    const s = sizeObject["European Sizes"].sizes;
+    for (let i = 0; i < s.length; i++) {
+        sizeSel.options[sizeSel.options.length] = new Option(s[i],s[i]);
+    }
 
     makerSel.onchange = function() {
         modelSel.length = 1; 
         const y = shoeObject[makerSel.value].model;
-        console.log(y);
         for (let i = 0; i < y.length; i++) {
             modelSel.options[modelSel.options.length] = new Option(y[i],y[i]);
         }
