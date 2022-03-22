@@ -73,6 +73,7 @@ const sizeObject = {
     }
 }
 
+//Shoe Detail Logic
 window.onload = function() {
     let makerSel = document.getElementById("maker");
     let modelSel = document.getElementById("model");
@@ -93,5 +94,19 @@ window.onload = function() {
         for (let i = 0; i < y.length; i++) {
             modelSel.options[modelSel.options.length] = new Option(y[i],y[i]);
         }
+    }
+}
+
+//Return Details Logic
+function returnDetails() {
+    const ship = document.getElementById("ship-checked");
+    const gym = document.getElementById("gym-checked");
+    var shipText = document.getElementById("ship-address");
+
+    if (ship.checked == true) {
+        shipText.style.display = "block";
+    }
+    if (gym.checked == true) {
+        shipText.style.display = "none";
     }
 }

@@ -22,11 +22,6 @@
                 <label>Name:<input type="text" name="name"/></label><br />
                 <label>Email:<input type="text" name="email"/></label><br />
                 <label>Phone Number:<input type="text" name="phone"/></label><br />
-                <label>Address:</label><br />
-                <label>street:<input type="text" name="street"/></label><br />
-                <label>city:<input type="text" name="city"/></label><br />
-                <label>state:<input type="text" name="state"/></label><br />
-                <label>zipcode:<input type="text" name="zipcode"/></label><br />
             </fieldset>
             <fieldset>
                 <legend>Shoe Details</legend>
@@ -78,8 +73,17 @@
                 <legend>Return Details</legend>
                 <h4>How would you like to receive your resoled shoes?</h4>
                 <br />
-                    <input type="radio" name="return" value="cityrock"/>Pick Up At CityRock
-                    <input type="radio" name="return" value="ship"/>Ship To An Address
+                    <input type="radio" name="return" value="cityrock" id="gym-checked" onclick="returnDetails()"/>Pick Up At CityRock
+                    <input type="radio" name="return" value="ship" id="ship-checked" onclick="returnDetails()"/>Ship To An Address
+                    <br />
+                    <br />
+                    <div id="ship-address" style="display:none">
+                        <label>Ship To Address:</label><br />
+                        <label>Street:<input type="text" name="street"/></label><br />
+                        <label>City:<input type="text" name="city"/></label><br />
+                        <label>State:<input type="text" name="state"/></label><br />
+                        <label>Zipcode:<input type="text" name="zipcode"/></label><br />
+                    </div>
             </fieldset>
         </form>
     </body>
