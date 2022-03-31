@@ -59,23 +59,6 @@ body {
     list-style: none; /* remove bullet points */ 
     margin-right: 2rem; /* breathing room between elements; way to do this with flex?? */ 
 }
- 
-.btn-footer {
-    font-size: 1rem; 
-    font-family: var(--font-primary);
-    color: white; 
-    background: var(--clr-red); 
-    border: none; /* get rid of the border lines that are default */ 
-    outline: none; /* get rid of the border lines that are default */ 
-    border-radius: var(--radius);
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    transition: all 200ms ease-in;
-}
-
-.btn-footer:hover{
-    /* add any animations on the buttons here */
-}
 
 .video-primary {
     width: 100%; 
@@ -170,21 +153,7 @@ body {
 /* || Footer with SVG Animation */ 
 
 footer { 
-    background-color: black;
-}
-
-.footer-container {
-    display: flex; 
-    align-items: flex-end;
-    justify-content: space-between;
-    padding-bottom: 3rem; 
-    padding-left: 2rem;
-    padding-right: 2rem;
-    color: #E5E5E5; 
-}
-
-#btn-and-license {
-    align-content: center;
+    background-color: white;
 }
 
 svg path {
@@ -197,4 +166,51 @@ svg path {
     to {
         stroke-dashoffset: 0;
     } 
+}
+
+.footer-container {
+    display: flex; 
+    /* align-items: flex-end; aligns items to botton/end if the container*/ 
+    justify-content: end;
+    padding-bottom: 3rem; 
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: black;
+}
+
+.footer-item {
+    max-width: 25%;
+}
+
+.footer-container :first-child {
+    margin-right: auto;
+}
+
+#company-logo {
+    /* margin-left: 4rem;; */
+}
+
+#mission-msg {
+    /* margin-right: 2rem; */
+}
+
+#contact-us{
+    /* margin-right: 4rem; */
+}
+
+.btn-footer {
+    font-size: 1rem; 
+    font-family: var(--font-primary);
+    color: white; 
+    background: var(--clr-red); 
+    border: none; /* get rid of the border lines that are default */ 
+    outline: none; /* get rid of the border lines that are default */ 
+    border-radius: var(--radius);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.btn-footer:hover{
+    /* add any animations on the buttons here */
 }
