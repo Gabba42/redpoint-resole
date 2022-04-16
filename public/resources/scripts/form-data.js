@@ -97,7 +97,7 @@ window.onload = function() {
     }
 }
 
-//Return Details Logic
+//Shipping Details Logic
 function returnDetails() {
     const ship = document.getElementById("ship-checked");
     const gym = document.getElementById("gym-checked");

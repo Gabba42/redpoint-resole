@@ -6,11 +6,10 @@ const pg = require('pg');
 const bodyParser = require('body-parser');
 
 const app = express(); 
-const port = process.env.PORT || 8080; 
+const port = process.env.PORT || 8080; //Heroku is going to use the env.PORT
 
 app 
-    .use(express.static('public')) //serve files in this folder
-    .use(express.static('resources/css'))
+    .use(express.static('public')) //will serve any static files in the 'public' folder
     .use(morgan('dev')) //saves everything in dev mode
 
     .use(bodyParser.urlencoded({ extended: false }))
