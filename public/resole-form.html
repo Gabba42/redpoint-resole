@@ -7,12 +7,14 @@
     </head>
 
     <body>
+
         <nav>
             <ul class="nav-list">
                 <li class="nav-item"><a href="/index.html"><img src="/resources/images/output-onlinepngtools.png" alt="redpoint resole logo" width="280" heigt="140"/></a></li>
             </ul>
         </nav>
-        <form action="" method="post"> 
+
+        <form action="/api/resoledata" method="post"> 
             <fieldset>
                 <legend>Contact Details</legend>
                 <label>Name:<input type="text" name="name"/></label><br />
@@ -81,7 +83,7 @@
                         <label>Zipcode:<input type="text" name="zipcode"/></label><br />
                     </div>
             </fieldset>
-            <input type="submit" name="submit" value="Submit"/>
+            <button type="submit">Submit</button>
         </form>
     </body>
 </html>
